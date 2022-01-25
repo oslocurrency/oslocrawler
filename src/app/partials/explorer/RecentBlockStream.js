@@ -58,9 +58,11 @@ export default class RecentBlockStream extends React.Component {
   }
 
   render() {
-    const { throughput } = this.state;
+    const { throughput, events } = this.state;
 
     if (!config.websocketServer) return null;
+
+    if (events.length == 0) return null;
 
     return (
       <Fragment>
