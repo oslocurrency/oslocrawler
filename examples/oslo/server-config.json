@@ -1,0 +1,19 @@
+{
+  "nodeName": "explorer.oslocurrency.io",
+  "account": "",
+  "clientUrl": "https://explorer.oslocurrency.io",
+  "raiblocksDir": "/home/user/Oslo",
+  "nodeHost": "http://10.0.1.152:7076",
+  "redis": "redis://127.0.0.1:6379",
+  "redisNamespace": "development",
+  "serverPort": 3001,
+  "coinMarketCapApiKey": "",
+  "monitorCurrencyName": "btcnew",
+  "knownMonitors": [
+    "http://207.148.8.82/api.php"
+  ],
+  "blacklistedPeers": [],
+  "officialRepresentatives": [
+    "oslo_1seed49ixy6aanrc97syg4qf4z6wfjufxu6wbne7g8n9cwcx8s51eiz1jgaa"
+  ]
+}

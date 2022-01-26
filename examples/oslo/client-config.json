@@ -1,0 +1,38 @@
+{
+  "server": "http://localhost:3001",
+  "websocketServer": "ws.explorer.oslocurrency.org",
+  "donationAddress": "btcnew_1seed49ixy6aanrc97syg4qf4z6wfjufxu6wbne7g8n9cwcx8s51eiz1jgaa",
+  "currency": {
+    "name": "Oslo",
+    "shortName": "OSLO",
+    "precision": 0,
+    "maxSupply": 133248289000000000000000000000000000000,
+    "prefixes": ["oslo"],
+    "qrPrefix": "oslo"
+  },
+  "features": {
+    "nodeStatus": true,
+    "searchSuggestions": false,
+    "supportedLanguages": {
+      "en": "English",
+      "cs": "Čeština",
+      "da": "Dansk",
+      "de": "Deutsch",
+      "es": "Español",
+      "fr": "Français",
+      "it": "Italiano",
+      "hr": "Hrvatski",
+      "hu": "Magyar",
+      "id": "Bahasa Indonesia",
+      "nl": "Nederlands",
+      "pt-BR": "Português Brasileiro",
+      "el": "Ελληνικά",
+      "ro": "Română",
+      "ru": "Русский",
+      "sv": "Svenska",
+      "zh-CN": "汉语",
+      "zh-TW": "漢語"
+    }
+  },
+  "serviceMonitors": []
+}

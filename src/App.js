@@ -11,7 +11,7 @@ import Content from "./app/Content";
 
 import AccountLink from "./app/partials/AccountLink";
 
-function App({ locale }) {  
+function App({ locale }) {
   return (
     <IntlProvider locale={locale.language} messages={locale.messages}>
       <div id="App" className="container-fluid p-0 h-100">
@@ -28,7 +28,7 @@ function App({ locale }) {
         <div className="row mr-0 align-items-center">
           <div className="col-md">
             <div className="py-2 px-4">
-              <p className="mb-0">Created by Ryan LeFevre (@meltingice)</p>
+              <p className="mb-0">Created by Vidaru</p>
               <p>
                 Donations: <AccountLink account={config.donationAddress} />
               </p>
@@ -36,16 +36,16 @@ function App({ locale }) {
           </div>
           <div className="col-auto">
             <div className="py-2 px-4">
-              <a href="https://twitter.com/meltingice" target="_blank">
+              <a href="https://twitter.com/vidaru" target="_blank">
                 Twitter
               </a>{" "}
               &bull;{" "}
-              <a href="https://reddit.com/u/meltingice" target="_blank">
+              <a href="https://reddit.com/u/vidaru-x" target="_blank">
                 Reddit
               </a>{" "}
               &bull;{" "}
               <a
-                href="https://github.com/meltingice/nano-node-dashboard"
+                href="https://github.com/oslocurrency/oslocrawler"
                 target="_blank"
               >
                 Source code
