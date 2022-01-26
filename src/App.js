@@ -28,7 +28,7 @@ function App({ locale }) {
         <div className="row mr-0 align-items-center">
           <div className="col-md">
             <div className="py-2 px-4">
-              <p className="mb-0">Created by Vidaru</p>
+              <p className="mb-0">Created by vidaru</p>
               <p>
                 Donations: <AccountLink account={config.donationAddress} />
               </p>
@@ -36,14 +36,6 @@ function App({ locale }) {
           </div>
           <div className="col-auto">
             <div className="py-2 px-4">
-              <a href="https://twitter.com/vidaru" target="_blank">
-                Twitter
-              </a>{" "}
-              &bull;{" "}
-              <a href="https://reddit.com/u/vidaru-x" target="_blank">
-                Reddit
-              </a>{" "}
-              &bull;{" "}
               <a
                 href="https://github.com/oslocurrency/oslocrawler"
                 target="_blank"
