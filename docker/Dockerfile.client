@@ -1,0 +1,21 @@
+FROM node:9 as build-stage
+RUN apt update
+RUN apt install -y python git
+
+WORKDIR /app
+
+COPY package.json .
+COPY yarn.lock .
+
+RUN yarn
+
+COPY . .
+
+RUN yarn build
+
+# production stage
+FROM nginx:1.13.12-alpine as production-stage
+
+COPY --from=build-stage /app/build /usr/share/nginx/html
+
+EXPOSE 80

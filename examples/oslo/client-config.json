@@ -1,6 +1,6 @@
 {
   "server": "http://localhost:3001",
-  "websocketServer": "ws.explorer.oslocurrency.org",
+  "websocketServer": "ws.explorer.oslocrypto.com",
   "donationAddress": "btcnew_1seed49ixy6aanrc97syg4qf4z6wfjufxu6wbne7g8n9cwcx8s51eiz1jgaa",
   "currency": {
     "name": "Oslo",

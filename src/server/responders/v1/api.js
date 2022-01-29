@@ -1,6 +1,6 @@
 import os from "os";
 import _ from "lodash";
-import config from "../../../../server-config.json";
+import config from "../../../config.js";
 import redisFetch from "../../helpers/redisFetch";
 import raiNodeInfo from "../../helpers/raiNodeInfo";
 import { getNinjaData } from "../../helpers/myNanoNinja";

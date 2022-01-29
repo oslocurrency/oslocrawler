@@ -1,6 +1,6 @@
 import { promisify } from "util";
 import curl from "curlrequest";
-import config from "../../server-config.json";
+import config from "../config.js";
 
 const request = promisify(curl.request.bind(curl));
 

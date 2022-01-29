@@ -1,6 +1,6 @@
 import { promisify } from "util";
 import redis from "redis";
-import config from "../../../server-config.json";
+import config from "../../config.js";
 
 const redisClient = redis.createClient(config.redis);
 const zRangeByScore = promisify(redisClient.zrangebyscore.bind(redisClient));

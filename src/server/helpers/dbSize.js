@@ -1,6 +1,6 @@
 import fs from "fs";
 import { promisify } from "util";
-import config from "../../../server-config.json";
+import config from "../../config.js";
 
 const fsStat = promisify(fs.stat);
 

@@ -1,6 +1,6 @@
 import { promisify } from "util";
 import redis from "redis";
-import serverConfig from "../../../server-config.json";
+import serverConfig from "../../config.js";
 import clientConfig from "../../client-config.json";
 
 let redisClient, redisSscan;

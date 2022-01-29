@@ -1,5 +1,5 @@
 import _ from "lodash";
-import config from "../../../../server-config.json";
+import config from "../../../config.js";
 import redisFetch from "../../helpers/redisFetch";
 import { accountIsValid, getTimestampForHash } from "../../helpers/util";
 import { frontiers, wealthDistribution } from "../../helpers/frontiers";

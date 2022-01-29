@@ -81,7 +81,7 @@ class NetworkStatus extends React.Component {
         {(
           (this.onlineRebroadcastWeight() / config.currency.maxSupply) *
           100.0
-        ).toFixed(2)}
+        ).toFixed(0)}
         %
       </Fragment>
     );
@@ -93,7 +93,7 @@ class NetworkStatus extends React.Component {
         {(
           (this.onlineRebroadcastWeight() / this.onlineWeight()) *
           100.0
-        ).toFixed(2)}
+        ).toFixed(0)}
         %
       </Fragment>
     );

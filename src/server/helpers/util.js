@@ -1,6 +1,6 @@
 import { Nano } from "nanode";
 import { redisGet } from "./redisFetch";
-import config from "../../../server-config.json";
+import config from "../../config.js";
 import Currency from "../../lib/Currency";
 
 const nano = new Nano({ url: config.nodeHost });

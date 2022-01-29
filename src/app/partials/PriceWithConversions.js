@@ -47,8 +47,8 @@ class PriceWithConversions extends React.PureComponent {
           <Fragment key="base">
             <FormattedNumber
               value={value}
-              minimumFractionDigits={Math.min(2, this.props.precision.base)}
-              maximumFractionDigits={this.props.precision.base}
+              minimumFractionDigits={0}//{Math.min(2, this.props.precision.base)}
+              maximumFractionDigits={0}//{this.props.precision.base}
             />{" "}
             {config.currency.shortName}
           </Fragment>
@@ -67,7 +67,7 @@ class PriceWithConversions extends React.PureComponent {
           <Fragment key="btc">
             ₿<FormattedNumber
               value={value}
-              maximumFractionDigits={this.props.precision.btc}
+              maximumFractionDigits={0}//{this.props.precision.btc}
             />
           </Fragment>
         );

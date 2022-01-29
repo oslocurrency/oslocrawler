@@ -2,7 +2,7 @@ import _ from "lodash";
 import fetch from "node-fetch";
 import redis from "redis";
 import { Nano } from "nanode";
-import config from "../../server-config.json";
+import config from "../config.js";
 
 import NodeMonitor from "./NodeMonitor";
 

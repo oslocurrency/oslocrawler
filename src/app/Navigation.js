@@ -37,28 +37,6 @@ const Navigation = () => {
               <TranslatedMessage id="nav.explorer" />
             </NavLink>
           </li>
-          <li className="nav-item">
-            <NavLink
-              exact
-              to="/network"
-              className="nav-link  pr-1 pr-md-3"
-              activeClassName="active"
-            >
-              <TranslatedMessage id="nav.network" />
-            </NavLink>
-          </li>
-          {config.features.nodeStatus && (
-            <li className="nav-item">
-              <NavLink
-                exact
-                to="/status"
-                className="nav-link  pr-1 pr-md-3"
-                activeClassName="active"
-              >
-                <TranslatedMessage id="nav.status" />
-              </NavLink>
-            </li>
-          )}
         </ul>
       </div>
 

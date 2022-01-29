@@ -95,8 +95,8 @@ export default class HistoryStateBlock extends React.PureComponent {
               <Fragment>
                 <FormattedNumber
                   value={Currency.fromRaw(block.amount)}
-                  minimumFractionDigits={2}
-                  maximumFractionDigits={6}
+                  minimumFractionDigits={0}//{2}
+                  maximumFractionDigits={0}//{6}
                 />{" "}
                 {config.currency.shortName}
               </Fragment>

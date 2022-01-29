@@ -6,7 +6,7 @@ import cors from "cors";
 import apiV1 from "./server/responders/v1";
 import apiV2 from "./server/responders/v2";
 
-import config from "../server-config.json";
+import config from "./config";
 
 const app = express();
 const nano = new Nano({ url: config.nodeHost });

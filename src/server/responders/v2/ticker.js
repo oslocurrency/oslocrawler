@@ -1,5 +1,5 @@
 import fetch from "node-fetch";
-import config from "../../../../server-config.json";
+import config from "../../../config.js";
 import redisFetch from "../../helpers/redisFetch";
 
 export default function(app, nano) {

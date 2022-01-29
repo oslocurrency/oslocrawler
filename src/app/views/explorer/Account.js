@@ -121,7 +121,7 @@ class Account extends React.Component {
               <Fragment>
                 <FormattedNumber
                   value={this.state.uptime}
-                  maximumFractionDigits={2}
+                  maximumFractionDigits={1}
                 />
                 %
               </Fragment>
@@ -221,8 +221,8 @@ class Account extends React.Component {
                         <p className="text-muted mb-0">
                           <FormattedNumber
                             value={Currency.fromRaw(pending)}
-                            minimumFractionDigits={2}
-                            maximumFractionDigits={6}
+                            minimumFractionDigits={1}
+                            maximumFractionDigits={1}
                           />{" "}
                           {config.currency.shortName}{" "}
                           <TranslatedMessage id="pending" />

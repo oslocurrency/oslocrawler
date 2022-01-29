@@ -1,6 +1,6 @@
 import _ from "lodash";
 import redisFetch from "../../helpers/redisFetch";
-import config from "../../../../server-config.json";
+import config from "../../../config.js";
 import Currency from "../../../lib/Currency";
 
 export default function(app, nano) {

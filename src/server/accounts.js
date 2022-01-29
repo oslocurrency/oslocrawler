@@ -1,7 +1,7 @@
 import _ from "lodash";
 import { Nano } from "nanode";
 import redis from "redis";
-import config from "../../server-config.json";
+import config from "../config.js";
 import clientConfig from "../client-config.json";
 import Currency from "../lib/Currency";
 
@@ -28,9 +28,11 @@ async function calculateAccountList() {
   for (let i = 0; i < accountChunks.length; i++) {
     const resp = await nano.accounts.balances(accountChunks[i]);
     _.forEach(resp.balances, (balances, account) => {
-      const balance =
+      const balance = balances.balance + balances.pending;
+      /*
         parseFloat(Currency.fromRaw(balances.balance), 10) +
         parseFloat(Currency.fromRaw(balances.pending), 10);
+      */
 
       if (parseFloat(balance, 10) < 0.000001) {
         accountsToRemove.push(account);

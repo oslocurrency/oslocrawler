@@ -1,0 +1,19 @@
+FROM node:9
+
+RUN mkdir /app
+
+WORKDIR /app
+
+COPY package.json .
+
+COPY yarn.lock .
+
+RUN yarn
+
+COPY . .
+
+RUN cp examples/oslo/server-config.json .
+
+ENV NODE_ENV production
+
+CMD ["node", "server.api.js"]
