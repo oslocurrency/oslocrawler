@@ -26,7 +26,7 @@ There is a full default config available in the examples folder. Copy `server-co
 
 The web front-end needs to know where the API server can be reached. Copy `client-config.json` from the examples into the `src` folder and update the config file to fit your environment.
 
-The [websocket server](https://github.com/meltingice/nanovault-ws) is optional, but you're welcome to use the hosted websocket server that's set as the default in the config. Depending on the sync status of your node, you may receive blocks from the websocket server before your node confirms them, which is why hosting one yourself is ideal. Remove the config entry to disable the websocket altogether.
+The [websocket server](https://github.com/oslocurrency/oslocrawler-ws) is optional, but you're welcome to use the hosted websocket server that's set as the default in the config. Depending on the sync status of your node, you may receive blocks from the websocket server before your node confirms them, which is why hosting one yourself is ideal. Remove the config entry to disable the websocket altogether.
 
 ## Development
 
